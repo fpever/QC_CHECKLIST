@@ -1,0 +1,8 @@
+﻿First say: Compress folder name comp to zipfile name comp.fp success at time 9/20/2017 11:49:37 AM
+First say: Compress folder name comp to zipfile name comp.fp success at time 9/20/2017 1:24:51 PM
+First say: Compress folder name comp to zipfile name comp.fp success at time 9/20/2017 2:25:19 PM
+First say: Compress folder name comp to zipfile name comp.fp success at time 9/20/2017 2:26:00 PM
+First say: Compress folder name comp to zipfile name comp.fp success at time 9/20/2017 2:57:19 PM
+First say: file bad password! at time 9/26/2017 4:22:58 PM
+First say: DeCompress file name comp.fp success at time 9/26/2017 4:23:19 PM
+First say: Compress folder name comp to zipfile name comp.fp success at time 9/27/2017 1:11:14 PM

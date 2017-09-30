@@ -1,0 +1,6 @@
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.DAL\bin\Release\cldal.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.DAL\bin\Release\cldal.pdb
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.DAL\obj\Release\CL.DAL.Resources.resources
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.DAL\obj\Release\CL.DAL.vbproj.GenerateResource.Cache
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.DAL\obj\Release\cldal.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.DAL\obj\Release\cldal.pdb

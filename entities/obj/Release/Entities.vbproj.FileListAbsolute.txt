@@ -1,0 +1,6 @@
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\bin\Release\entities.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\bin\Release\entities.pdb
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Release\entities.Resources.resources
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Release\Entities.vbproj.GenerateResource.Cache
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Release\entities.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Release\entities.pdb

@@ -1,0 +1,14 @@
+D:\Develop share\QC\QC_CheckList\entities\bin\Debug\entities.dll
+D:\Develop share\QC\QC_CheckList\entities\bin\Debug\entities.pdb
+D:\Develop share\QC\QC_CheckList\entities\bin\Debug\entities.xml
+D:\Develop share\QC\QC_CheckList\entities\obj\Debug\entities.Resources.resources
+D:\Develop share\QC\QC_CheckList\entities\obj\Debug\entities.vbproj.GenerateResource.Cache
+D:\Develop share\QC\QC_CheckList\entities\obj\Debug\entities.dll
+D:\Develop share\QC\QC_CheckList\entities\obj\Debug\entities.xml
+D:\Develop share\QC\QC_CheckList\entities\obj\Debug\entities.pdb
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\bin\Debug\entities.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\bin\Debug\entities.pdb
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Debug\entities.Resources.resources
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Debug\Entities.vbproj.GenerateResource.Cache
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Debug\entities.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\entities\obj\Debug\entities.pdb

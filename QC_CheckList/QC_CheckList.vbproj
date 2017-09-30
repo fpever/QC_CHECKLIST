@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3B48C53B5A3DEC376AF30E646E63A73DD29B5AEC</ManifestCertificateThumbprint>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>QC_CheckList_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AD972A2-5628-4F00-BA3B-2257FA4CFA56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QC_CheckList.My.MyApplication</StartupObject>
+    <RootNamespace>QC_CheckList</RootNamespace>
+    <AssemblyName>QC_CheckList</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>display.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AquaGauge, Version=1.0.6480.24190, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\AquaGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="ProEasyDotNet">
+      <HintPath>..\..\..\..\QC_CheckList\QC_CheckList\bin\Debug\ProEasyDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TabStrip, Version=2.0.3551.17384, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TabStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="VncSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=61974755c7bfea7c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\VncSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\frmAuthentication_Account.Designer.vb">
+      <DependentUpon>frmAuthentication_Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\frmAuthentication_Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\frmAuthentication_Group.Designer.vb">
+      <DependentUpon>frmAuthentication_Group.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\frmAuthentication_Group.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\frmAuthentication_Permission.Designer.vb">
+      <DependentUpon>frmAuthentication_Permission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\frmAuthentication_Permission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\frmFunction_MenuAdd.Designer.vb">
+      <DependentUpon>frmFunction_MenuAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\frmFunction_MenuAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curing\Dialog\frmPopup_UnlockCuring.Designer.vb">
+      <DependentUpon>frmPopup_UnlockCuring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Curing\Dialog\frmPopup_UnlockCuring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curing\Dialog\frmUnlockReasonDialog.Designer.vb">
+      <DependentUpon>frmUnlockReasonDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Curing\Dialog\frmUnlockReasonDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curing\frmCuringStateWorking.Designer.vb">
+      <DependentUpon>frmCuringStateWorking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Curing\frmCuringStateWorking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curing\frmCuring_UnlockNEW.Designer.vb">
+      <DependentUpon>frmCuring_UnlockNEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Curing\frmCuring_UnlockNEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curing\Dialog\frmReasonDialog.Designer.vb">
+      <DependentUpon>frmReasonDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Curing\Dialog\frmReasonDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curing\frmUserUnlockCuring.Designer.vb">
+      <DependentUpon>frmUserUnlockCuring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Curing\frmUserUnlockCuring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curing\frmCuring_Unlock.Designer.vb">
+      <DependentUpon>frmCuring_Unlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Curing\frmCuring_Unlock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\frmDashboard.Designer.vb">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\frmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.vb">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GW\frmSumGW_Graph.Designer.vb">
+      <DependentUpon>frmSumGW_Graph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GW\frmSumGW_Graph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitor\frmMonitorQC.Designer.vb">
+      <DependentUpon>frmMonitorQC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor\frmMonitorQC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="BS\frmBSMachineChecklist.Designer.vb">
+      <DependentUpon>frmBSMachineChecklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BS\frmBSMachineChecklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Dialog\frmDialogCuringWork.Designer.vb">
+      <DependentUpon>frmDialogCuringWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Dialog\frmDialogCuringWork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\frmQCSick1TireInfo.Designer.vb">
+      <DependentUpon>frmQCSick1TireInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\frmQCSick1TireInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\frmQC1Code_Editor.Designer.vb">
+      <DependentUpon>frmQC1Code_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\frmQC1Code_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Repaire\frmQCRepaire_NEW.Designer.vb">
+      <DependentUpon>frmQCRepaire_NEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Repaire\frmQCRepaire_NEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Repaire\frmQCRepaire_TBR.Designer.vb">
+      <DependentUpon>frmQCRepaire_TBR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Repaire\frmQCRepaire_TBR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Trimming report\frmFlowTrimmingLogscanner.Designer.vb">
+      <DependentUpon>frmFlowTrimmingLogscanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Trimming report\frmFlowTrimmingLogscanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Trimming report\frmDailyProductionTriming.Designer.vb">
+      <DependentUpon>frmDailyProductionTriming.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Trimming report\frmDailyProductionTriming.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Repaire\frmQCRepaire_PCR.Designer.vb">
+      <DependentUpon>frmQCRepaire_PCR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Repaire\frmQCRepaire_PCR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Summary PCR TBR\frmSumTBR.Designer.vb">
+      <DependentUpon>frmSumTBR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Summary PCR TBR\frmSumTBR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\frmMicrolineSpecCtrl.Designer.vb">
+      <DependentUpon>frmMicrolineSpecCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\frmMicrolineSpecCtrl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\frmQCFlow_Status.Designer.vb">
+      <DependentUpon>frmQCFlow_Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\frmQCFlow_Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\Summary PCR TBR\frmSumPCR.Designer.vb">
+      <DependentUpon>frmSumPCR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Summary PCR TBR\frmSumPCR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tire condition\frmTireCondition_STDControlSpec.Designer.vb">
+      <DependentUpon>frmTireCondition_STDControlSpec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tire condition\frmTireCondition_STDControlSpec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFDB\frmUFDB_PCRDailyResult.Designer.vb">
+      <DependentUpon>frmUFDB_PCRDailyResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UFDB\frmUFDB_PCRDailyResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFDB\frmUFDB_PCRDailyReport.Designer.vb">
+      <DependentUpon>frmUFDB_PCRDailyReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UFDB\frmUFDB_PCRDailyReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Authentication\frmAuthentication_Account.resx">
+      <DependentUpon>frmAuthentication_Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\frmAuthentication_Group.resx">
+      <DependentUpon>frmAuthentication_Group.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\frmAuthentication_Permission.resx">
+      <DependentUpon>frmAuthentication_Permission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\frmFunction_MenuAdd.resx">
+      <DependentUpon>frmFunction_MenuAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curing\Dialog\frmPopup_UnlockCuring.resx">
+      <DependentUpon>frmPopup_UnlockCuring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curing\Dialog\frmUnlockReasonDialog.resx">
+      <DependentUpon>frmUnlockReasonDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curing\frmCuringStateWorking.resx">
+      <DependentUpon>frmCuringStateWorking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curing\frmCuring_UnlockNEW.resx">
+      <DependentUpon>frmCuring_UnlockNEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curing\Dialog\frmReasonDialog.resx">
+      <DependentUpon>frmReasonDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curing\frmUserUnlockCuring.resx">
+      <DependentUpon>frmUserUnlockCuring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curing\frmCuring_Unlock.resx">
+      <DependentUpon>frmCuring_Unlock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\frmDashboard.resx">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GW\frmSumGW_Graph.resx">
+      <DependentUpon>frmSumGW_Graph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitor\frmMonitorQC.resx">
+      <DependentUpon>frmMonitorQC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS\frmBSMachineChecklist.resx">
+      <DependentUpon>frmBSMachineChecklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Dialog\frmDialogCuringWork.resx">
+      <DependentUpon>frmDialogCuringWork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\frmQCSick1TireInfo.resx">
+      <DependentUpon>frmQCSick1TireInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\frmQC1Code_Editor.resx">
+      <DependentUpon>frmQC1Code_Editor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Repaire\frmQCRepaire_NEW.resx">
+      <DependentUpon>frmQCRepaire_NEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Repaire\frmQCRepaire_TBR.resx">
+      <DependentUpon>frmQCRepaire_TBR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Trimming report\frmFlowTrimmingLogscanner.resx">
+      <DependentUpon>frmFlowTrimmingLogscanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Trimming report\frmDailyProductionTriming.resx">
+      <DependentUpon>frmDailyProductionTriming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Repaire\frmQCRepaire_PCR.resx">
+      <DependentUpon>frmQCRepaire_PCR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Summary PCR TBR\frmSumTBR.resx">
+      <DependentUpon>frmSumTBR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\frmMicrolineSpecCtrl.resx">
+      <DependentUpon>frmMicrolineSpecCtrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\frmQCFlow_Status.resx">
+      <DependentUpon>frmQCFlow_Status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\Summary PCR TBR\frmSumPCR.resx">
+      <DependentUpon>frmSumPCR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tire condition\frmTireCondition_STDControlSpec.resx">
+      <DependentUpon>frmTireCondition_STDControlSpec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFDB\frmUFDB_PCRDailyResult.resx">
+      <DependentUpon>frmUFDB_PCRDailyResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFDB\frmUFDB_PCRDailyReport.resx">
+      <DependentUpon>frmUFDB_PCRDailyReport.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="QC_CheckList_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CL.BLL\CL.BLL.vbproj">
+      <Project>{54d458a0-dce2-43bd-a894-f4047cf4cc72}</Project>
+      <Name>CL.BLL</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.Utility\CL.Utility.vbproj">
+      <Project>{56001a03-4881-4737-a437-36e759509111}</Project>
+      <Name>CL.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\entities\Entities.vbproj">
+      <Project>{ddec8bc8-f6ed-4b59-b6f5-d7b26aa0ea1a}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="display.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

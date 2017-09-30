@@ -1,0 +1,9 @@
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\obj\Release\CL.Utility.Resources.resources
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\obj\Release\CL.Utility.ctlFlowStation.resources
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\obj\Release\CL.Utility.vbproj.GenerateResource.Cache
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\bin\Release\Utility.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\bin\Release\Utility.pdb
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\bin\Release\zip.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\obj\Release\CL.Utility.vbprojResolveAssemblyReference.cache
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\obj\Release\Utility.dll
+D:\Develop share\QC\GDrive\QC\QC_CheckList\CL.Utility\obj\Release\Utility.pdb

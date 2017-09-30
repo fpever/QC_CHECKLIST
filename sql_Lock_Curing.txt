@@ -1,0 +1,7 @@
+SELECT *
+FROM [QC1].[dbo].[Lock_Curing] T1    
+WHERE StopTime = (
+   SELECT max(StopTime)
+   FROM [QC1].[dbo].[Lock_Curing] T2
+   WHERE T1.Curing_Mach=T2.Curing_Mach AND StartTime IS NULL AND Factory = 'B' 
+)
